@@ -28,7 +28,7 @@
                 return item.node.id == self.node.parentId
             });
             if (parentNode != null) {
-                self.left = parentNode.canvasWidth * parentNode.index;
+                self.left =parentNode.left+ parentNode.canvasWidth * parentNode.index;
             }
             if (self.lineCount == 1) {
                 self.X = self.left + (self.canvasWidth - self.width()) / 2;
